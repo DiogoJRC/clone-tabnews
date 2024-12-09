@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Implementação do projeto tabnews do curso.dev para fins de estudo",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "author": "",
   "license": "MIT",
@@ -13,5 +14,8 @@
     "next": "^13.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
   }
 }
