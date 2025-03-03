@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
 function Home() {
-  const date = new Date();
-  let [hora, setHora] = useState(false);
+  const [hora, setHora] = useState(false);
 
   useEffect(() => {
+    const date = new Date();
+
     setHora(date.getHours());
   }, []);
 
